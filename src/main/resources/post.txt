@@ -1,0 +1,58 @@
+http://192.168.115.113:8888/v1/chain/abi_json_to_bin
+{"code":"eosio.token","action":"transfer","args":{"from":"eosio.chen","to":"eosio.token","quantity":"5.0000 SYS", "memo":"transfer form eosio.chen to eosio.token"}}
+
+http://192.168.115.113:8888/v1/chain/get_info
+
+http://192.168.115.113:8888/v1/chain/get_block
+{"block_num_or_id":"174722"}
+
+http://192.168.115.113:8889/v1/wallet/sign_transaction
+[
+    {
+    	"ref_block_prefix": "3282150794",
+        "ref_block_num": "174722",
+        "expiration": "2020-08-10T14:59:07",
+        
+        "actions": [
+            {
+                "account": "eosio.token",
+                "name": "transfer",
+                "authorization": [
+                    {
+                        "actor": "eosio.chen",
+                        "permission": "active"
+                    }
+                ],
+                "data": "00c0540d01ea305500a6823403ea305550c30000000000000453595300000000277472616e7366657220666f726d20656f73696f2e6368656e20746f20656f73696f2e746f6b656e"
+            }
+        ]
+    },
+    [
+        "EOS8iZ7VGyjfs7aXjYFgvMzWpbbaYZyh3mEkzs5LrWSFs8aJi1pvP"
+    ],
+    "cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f"
+]
+
+http://192.168.115.113:8888/v1/chain/push_transaction
+{
+  "compression": "none",
+  "transaction": {
+   "ref_block_prefix": "3282150794",
+        "ref_block_num": "174722",
+         "expiration": "2020-08-10T14:59:07",
+    "actions": [
+            {
+                "account": "eosio.token",
+                "name": "transfer",
+                "authorization": [
+                    {
+                        "actor": "eosio.chen",
+                        "permission": "active"
+                    }
+                ],
+                "data": "00c0540d01ea305500a6823403ea305550c30000000000000453595300000000277472616e7366657220666f726d20656f73696f2e6368656e20746f20656f73696f2e746f6b656e"
+            }
+        ]
+  },
+  "signatures": ["SIG_K1_JzcrD8bXHvGfQXpzNaLwAgEo1WnbCyPhsqR99zcHwDbztHk4LzHnWxZFziqq88b9FNCKrzT8yiPgZmnFz75XKr74hsGNiB"]
+}
