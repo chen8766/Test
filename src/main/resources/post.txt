@@ -56,3 +56,8 @@ http://192.168.115.113:8888/v1/chain/push_transaction
   },
   "signatures": ["SIG_K1_JzcrD8bXHvGfQXpzNaLwAgEo1WnbCyPhsqR99zcHwDbztHk4LzHnWxZFziqq88b9FNCKrzT8yiPgZmnFz75XKr74hsGNiB"]
 }
+
+
+rpm -qa 查看所有安装的软件
+rpm -ivh 软件名 安装指定的软件
+rpm -e --nodpes 软件名 卸载指定的软件
