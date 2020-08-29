@@ -1,0 +1,296 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "CONTENT",
+            "base": "",
+            "fields": [
+                {
+                    "name": "CrtT",
+                    "type": "uint64"
+                },
+                {
+                    "name": "PkgSeq",
+                    "type": "string"
+                },
+                {
+                    "name": "UDSum",
+                    "type": "uint16"
+                },
+                {
+                    "name": "UD",
+                    "type": "ud[]"
+                }
+            ]
+        },
+        {
+            "name": "HOMEPARTY",
+            "base": "",
+            "fields": [
+                {
+                    "name": "HomePartyID",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "MIGUCORDER",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "Transido",
+                    "type": "uint64"
+                },
+                {
+                    "name": "CrtT",
+                    "type": "uint64"
+                },
+                {
+                    "name": "data",
+                    "type": "PARAM"
+                }
+            ]
+        },
+        {
+            "name": "PARAM",
+            "base": "",
+            "fields": [
+                {
+                    "name": "Transido",
+                    "type": "uint64"
+                },
+                {
+                    "name": "UserPartyID",
+                    "type": "string"
+                },
+                {
+                    "name": "HomeParty",
+                    "type": "HOMEPARTY[]"
+                },
+                {
+                    "name": "SignType",
+                    "type": "string"
+                },
+                {
+                    "name": "ReceiverKey",
+                    "type": "string"
+                },
+                {
+                    "name": "Content",
+                    "type": "CONTENT"
+                }
+            ]
+        },
+        {
+            "name": "cleanbefore",
+            "base": "",
+            "fields": [
+                {
+                    "name": "CrtT",
+                    "type": "uint64"
+                },
+                {
+                    "name": "batchsize",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "migucorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "order",
+                    "type": "PARAM"
+                }
+            ]
+        },
+        {
+            "name": "remove",
+            "base": "",
+            "fields": [
+                {
+                    "name": "Transido",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "removebyid",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "ud",
+            "base": "",
+            "fields": [
+                {
+                    "name": "OprNumb",
+                    "type": "string"
+                },
+                {
+                    "name": "IDVA",
+                    "type": "string"
+                },
+                {
+                    "name": "IDVB",
+                    "type": "string"
+                },
+                {
+                    "name": "Opr",
+                    "type": "string"
+                },
+                {
+                    "name": "BizType",
+                    "type": "string"
+                },
+                {
+                    "name": "BillFlg",
+                    "type": "string"
+                },
+                {
+                    "name": "SPID",
+                    "type": "string"
+                },
+                {
+                    "name": "SPBizCode",
+                    "type": "string"
+                },
+                {
+                    "name": "Source",
+                    "type": "string"
+                },
+                {
+                    "name": "EfftT",
+                    "type": "string"
+                },
+                {
+                    "name": "Channel",
+                    "type": "string"
+                },
+                {
+                    "name": "MemberLevel",
+                    "type": "string"
+                },
+                {
+                    "name": "ChannelCode",
+                    "type": "string"
+                },
+                {
+                    "name": "DeviceSN",
+                    "type": "string"
+                },
+                {
+                    "name": "CAMPAIGN_ID",
+                    "type": "string"
+                },
+                {
+                    "name": "UD1",
+                    "type": "ud1"
+                }
+            ]
+        },
+        {
+            "name": "ud1",
+            "base": "",
+            "fields": [
+                {
+                    "name": "OldIDV",
+                    "type": "string"
+                },
+                {
+                    "name": "actionReasonID",
+                    "type": "string"
+                },
+                {
+                    "name": "Pseq",
+                    "type": "string"
+                },
+                {
+                    "name": "ZipCode",
+                    "type": "string"
+                },
+                {
+                    "name": "CityCode",
+                    "type": "string"
+                },
+                {
+                    "name": "DistrictCode",
+                    "type": "string"
+                },
+                {
+                    "name": "Address",
+                    "type": "string"
+                },
+                {
+                    "name": "OldStbID",
+                    "type": "string"
+                },
+                {
+                    "name": "OldSPID",
+                    "type": "string"
+                },
+                {
+                    "name": "OldSPServID",
+                    "type": "string"
+                },
+                {
+                    "name": "OTP",
+                    "type": "string"
+                },
+                {
+                    "name": "OprTime",
+                    "type": "string"
+                },
+                {
+                    "name": "BroadbandID",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "cleanbefore",
+            "type": "cleanbefore",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "migucorder",
+            "type": "migucorder",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "remove",
+            "type": "remove",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removebyid",
+            "type": "removebyid",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "miguorders",
+            "type": "MIGUCORDER",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
